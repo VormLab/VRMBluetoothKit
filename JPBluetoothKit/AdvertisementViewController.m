@@ -7,12 +7,12 @@
 //
 
 #import "AdvertisementViewController.h"
-#import "PPAdvertisement.h"
+#import "VRMAdvertisement.h"
 
 @interface AdvertisementViewController () <UITextFieldDelegate>
 
-@property (nonatomic, strong) PPAdvertisement *advertisement;
-@property (nonatomic, strong) PPCharacteristic *characteristic;
+@property (nonatomic, strong) VRMAdvertisement *advertisement;
+@property (nonatomic, strong) VRMCharacteristic *characteristic;
 
 @end
 
@@ -26,13 +26,16 @@
 
 - (void)startAdvertising {
     
-    PPService *s1 = [[PPService alloc] initWithUUID:[CBUUID UUIDWithString:serviceUUID]];
+    VRMService *s1 = [[VRMService alloc] initWithUUID:[CBUUID UUIDWithString:serviceUUID]];
     
-    self.characteristic = [[PPCharacteristic alloc] initWithContainedService:s1 uuid:[CBUUID UUIDWithString:characteristicUUID] properties:CBCharacteristicPropertyRead | CBCharacteristicPropertyWrite | CBCharacteristicPropertyNotify permissions:CBAttributePermissionsReadable | CBAttributePermissionsWriteable];
+    self.characteristic = [[VRMCharacteristic alloc] initWithContainedService:s1 uuid:[CBUUID UUIDWithString:characteristicUUID] properties:CBCharacteristicPropertyRead | CBCharacteristicPropertyWrite | CBCharacteristicPropertyNotify permissions:CBAttributePermissionsReadable | CBAttributePermissionsWriteable];
+    NSDictionary *advertisment = @{
+                              //     CBAdvertisementDataServiceUUIDsKey : @[serviceUUID],
+                                   CBAdvertisementDataLocalNameKey: @"TEST3"
+                                   };
     
-    PPConfiguration *configuration = [PPConfiguration adverisementConfigurationWithServices:@[s1] characteristics:@[self.characteristic] advertisingPacket:@{CBAdvertisementDataLocalNameKey:@"TEST",
-                                                                                                                                                             CBAdvertisementDataServiceUUIDsKey:serviceUUID}];
-    self.advertisement = [[PPAdvertisement alloc] init];
+    VRMConfiguration *configuration = [VRMConfiguration adverisementConfigurationWithServices:@[s1] characteristics:@[self.characteristic] advertisingPacket:advertisment];
+    self.advertisement = [[VRMAdvertisement alloc] init];
     [self.advertisement advertisePerpheralWithConfiguration:configuration];
 }
 

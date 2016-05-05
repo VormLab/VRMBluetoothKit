@@ -1,14 +1,14 @@
 //
 //  ViewController.m
-//  JPBluetoothKit
+//  VRMBluetoothKit
 //
 //  Created by Jan Posz on 25.01.2016.
 //  Copyright © 2016 Jan Posz. All rights reserved.
 //
 
 #import "ConnectionViewController.h"
-#import "PPConnection.h"
-#import "PPAdvertisement.h"
+#import "VRMConnection.h"
+#import "VRMAdvertisement.h"
 #import "Constants.h"
 
 static NSString *LED_SERVICE_UUID               = @"A000";
@@ -32,18 +32,18 @@ static NSString *LED2_STATE_CHARACTERISTIC_UUID = @"A003";
 
 - (void)connect {
     
-    PPService *s1 = [[PPService alloc] initWithUUID:[CBUUID UUIDWithString:LED_SERVICE_UUID]];
-    PPService *s2 = [[PPService alloc] initWithUUID:[CBUUID UUIDWithString:LED2_SERVICE_UUID]];
+    VRMService *s1 = [[VRMService alloc] initWithUUID:[CBUUID UUIDWithString:LED_SERVICE_UUID]];
+    VRMService *s2 = [[VRMService alloc] initWithUUID:[CBUUID UUIDWithString:LED2_SERVICE_UUID]];
     
-    PPCharacteristic *ch1 = [[PPCharacteristic alloc] initWithContainedService:s1 uuid:[CBUUID UUIDWithString:LED_STATE_CHARACTERISTIC_UUID] shouldObserveValue:YES];
+    VRMCharacteristic *ch1 = [[VRMCharacteristic alloc] initWithContainedService:s1 uuid:[CBUUID UUIDWithString:LED_STATE_CHARACTERISTIC_UUID] shouldObserveValue:YES];
     
-    PPCharacteristic *ch2 = [[PPCharacteristic alloc] initWithContainedService:s2 uuid:[CBUUID UUIDWithString:LED2_STATE_CHARACTERISTIC_UUID] shouldObserveValue:YES];
+    VRMCharacteristic *ch2 = [[VRMCharacteristic alloc] initWithContainedService:s2 uuid:[CBUUID UUIDWithString:LED2_STATE_CHARACTERISTIC_UUID] shouldObserveValue:YES];
     
-    PPConfiguration *config = [PPConfiguration connectionConfigurationWithServices:@[s1,s2] characteristics:@[ch1,ch2] advertisementUUID:LED_SERVICE_UUID];
+    VRMConfiguration *config = [VRMConfiguration connectionConfigurationWithServices:@[s1,s2] characteristics:@[ch1,ch2] advertisementUUID:LED_SERVICE_UUID];
     
-    PPPeripheral *peripheral = [PPPeripheral peripheralWithConfiguration:config];
+    VRMPeripheral *peripheral = [VRMPeripheral peripheralWithConfiguration:config];
     
-    PPConnection *connection = [[PPConnection alloc] init];
+    VRMConnection *connection = [[VRMConnection alloc] init];
     connection.enableLogging = true;
     [connection connectDevice:peripheral completionHandler:^(BOOL completed, NSError *error) {
         NSLog(@"jakiś log");

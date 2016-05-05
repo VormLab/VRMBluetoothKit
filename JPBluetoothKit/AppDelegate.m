@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  JPBluetoothKit
+//  VRMBluetoothKit
 //
 //  Created by Jan Posz on 25.01.2016.
 //  Copyright © 2016 Jan Posz. All rights reserved.

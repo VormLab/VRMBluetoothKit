@@ -1,6 +1,6 @@
 //
 //  Header.h
-//  JPBluetoothKit
+//  VRMBluetoothKit
 //
 //  Created by Jan Posz on 05.02.2016.
 //  Copyright © 2016 Jan Posz. All rights reserved.

@@ -1,0 +1,165 @@
+//
+//  VRMConnectionErrorBuilder.m
+//
+// Copyright (c) 2016 Jan Posz
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+
+#import "VRMErrorBuilder.h"
+
+static NSString *domain = @"PPBluetoothKitError";
+
+static NSString *disconnection_description = @"The connection quit unexpectedly";
+static NSString *bluetooth_off = @"The bluetooth module is off (CBCentralManagerStatePoweredOff)";
+static NSString *bluetooth_resetting = @"The bluetooth module is resetting (CBCentralManagerStateResetting)";
+static NSString *bluetooth_unathorized = @"The bluetooth module is unathorized (CBCentralManagerStateUnauthorized)";
+static NSString *bluetooth_unsupported = @"This device does not support Bluetoth 4.0.";
+static NSString *bluetooth_unknown = @"Bluetooth state is unknown (CBCentralManagerStateUnknown)";
+static NSString *wrong_format_configurtaion = @"Check the data input format when configurin VRMConnectionConfiguration class";
+static NSString *no_device_error = @"Before writing values, you must first connect to the device using VRMConnection class.";
+
+static NSString *writing_to_readonly = @"You are trying to write to characteristic that is read-only.";
+static NSString *reading_from_writeonly = @"You are trying to read from characteristic that is write-only.";
+
+@implementation VRMErrorBuilder
+
++ (NSError *)errorForBluetoothCentralState:(CBCentralManagerState)state {
+    switch (state) {
+        case CBCentralManagerStatePoweredOff:
+            return [VRMErrorBuilder errorForType:ErrorTypeBluetoothOff];
+            break;
+        case CBCentralManagerStateResetting:
+            return [VRMErrorBuilder errorForType:ErrorTypeBluetoothResetting];
+            break;
+        case CBCentralManagerStateUnauthorized:
+            return [VRMErrorBuilder errorForType:ErrorTypeBluetoothUnauthorized];
+            break;
+        case CBCentralManagerStateUnsupported:
+            return [VRMErrorBuilder errorForType:ErrorTypeBluetoothUnsupported];
+            break;
+        case CBCentralManagerStateUnknown:
+            return [VRMErrorBuilder errorForType:ErrorTypeBluetoothUnknown];
+            break;
+        default:
+            break;
+    }
+    return nil;
+}
+
++ (NSError *)errorForBluetoothPeripheralState:(CBPeripheralManagerState)state {
+    switch (state) {
+        case CBPeripheralManagerStatePoweredOff:
+            return [VRMErrorBuilder errorForType:ErrorTypeBluetoothOff];
+            break;
+        case CBPeripheralManagerStateResetting:
+            return [VRMErrorBuilder errorForType:ErrorTypeBluetoothResetting];
+            break;
+        case CBPeripheralManagerStateUnauthorized:
+            return [VRMErrorBuilder errorForType:ErrorTypeBluetoothUnauthorized];
+            break;
+        case CBPeripheralManagerStateUnsupported:
+            return [VRMErrorBuilder errorForType:ErrorTypeBluetoothUnsupported];
+            break;
+        case CBPeripheralManagerStateUnknown:
+            return [VRMErrorBuilder errorForType:ErrorTypeBluetoothUnknown];
+            break;
+        default:
+            break;
+    }
+    return nil;
+}
+
++ (NSError *)wrongConfigurationInputFormatError {
+    
+    return [VRMErrorBuilder errorForType:ErrorTypeWrongInputFormat];
+}
+
++ (NSError *)noDeviceConnectedError {
+    
+    return [VRMErrorBuilder errorForType:ErrorTypeNoDevice];
+}
+
++ (NSError *)disconnectionError {
+    
+    return [VRMErrorBuilder errorForType:ErrorTypeDisconnection];
+}
+
++ (NSError *)readingFromWriteOnlyError {
+    
+    return [VRMErrorBuilder errorForType:ErrorTypeWrongReadPermission];
+}
+
++ (NSError *)writingToReadOnlyError {
+    
+    return [VRMErrorBuilder errorForType:ErrorTypeWrongWritePermission];
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// Helpers//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
++ (NSError *)errorForType:(ErrorType)type {
+    switch (type) {
+        case ErrorTypeBluetoothOff:
+            return [VRMErrorBuilder createError:type message:bluetooth_off];
+            break;
+        case ErrorTypeBluetoothResetting:
+            return [VRMErrorBuilder createError:type message:bluetooth_resetting];
+            break;
+        case ErrorTypeBluetoothUnauthorized:
+            return [VRMErrorBuilder createError:type message:bluetooth_unathorized];
+            break;
+        case ErrorTypeBluetoothUnknown:
+            return [VRMErrorBuilder createError:type message:bluetooth_unknown];
+            break;
+        case ErrorTypeBluetoothUnsupported:
+            return [VRMErrorBuilder createError:type message:bluetooth_unsupported];
+            break;
+        case ErrorTypeDisconnection:
+            return [VRMErrorBuilder createError:type message:disconnection_description];
+            break;
+        case ErrorTypeWrongInputFormat:
+            return [VRMErrorBuilder createError:type message:wrong_format_configurtaion];
+            break;
+        case ErrorTypeNoDevice:
+            return [VRMErrorBuilder createError:type message:no_device_error];
+            break;
+        case ErrorTypeWrongReadPermission:
+            return [VRMErrorBuilder createError:type message:reading_from_writeonly];
+            break;
+        case ErrorTypeWrongWritePermission:
+            return [VRMErrorBuilder createError:type message:writing_to_readonly];
+            break;
+        default:
+            break;
+    }
+    return nil;
+}
+
++ (NSError *)createError:(ErrorType)type message:(NSString *)message {
+    NSError *error = [NSError errorWithDomain:domain code:type userInfo:[VRMErrorBuilder errorUserInfoWithMessage:message]];
+    return error;
+}
+
++ (NSDictionary *)errorUserInfoWithMessage:(NSString *)message {
+    return @{NSLocalizedDescriptionKey : message};
+}
+
+@end
