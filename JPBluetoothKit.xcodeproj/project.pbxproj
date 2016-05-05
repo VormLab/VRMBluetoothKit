@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F60FBBB1C8D956C00311E3A /* PPAdvertisement.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F60FB9B1C8D956C00311E3A /* PPAdvertisement.m */; };
+		9F60FBBC1C8D956C00311E3A /* PPAdvertisementCoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F60FB9D1C8D956C00311E3A /* PPAdvertisementCoreManager.m */; };
+		9F60FBBD1C8D956C00311E3A /* PPCharacteristic.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F60FBA11C8D956C00311E3A /* PPCharacteristic.m */; };
+		9F60FBBE1C8D956C00311E3A /* PPConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F60FBA31C8D956C00311E3A /* PPConfiguration.m */; };
+		9F60FBBF1C8D956C00311E3A /* PPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F60FBA51C8D956C00311E3A /* PPService.m */; };
+		9F60FBC01C8D956C00311E3A /* PPCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F60FBA91C8D956C00311E3A /* PPCommand.m */; };
+		9F60FBC11C8D956C00311E3A /* PPCommandBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F60FBAB1C8D956C00311E3A /* PPCommandBuilder.m */; };
+		9F60FBC21C8D956C00311E3A /* PPMultipartCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F60FBAD1C8D956C00311E3A /* PPMultipartCommand.m */; };
+		9F60FBC31C8D956C00311E3A /* PPPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F60FBAF1C8D956C00311E3A /* PPPeripheral.m */; };
+		9F60FBC41C8D956C00311E3A /* PPCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F60FBB11C8D956C00311E3A /* PPCentralManager.m */; };
+		9F60FBC51C8D956C00311E3A /* PPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F60FBB31C8D956C00311E3A /* PPConnection.m */; };
+		9F60FBC61C8D956C00311E3A /* PPConnectionCoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F60FBB51C8D956C00311E3A /* PPConnectionCoreManager.m */; };
+		9F60FBC71C8D956C00311E3A /* PPErrorBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F60FBB81C8D956C00311E3A /* PPErrorBuilder.m */; };
+		9F60FBC81C8D956C00311E3A /* PPUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F60FBBA1C8D956C00311E3A /* PPUtility.m */; };
+		9FCB5B771C569E740056A392 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCB5B761C569E740056A392 /* main.m */; };
+		9FCB5B7A1C569E740056A392 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCB5B791C569E740056A392 /* AppDelegate.m */; };
+		9FCB5B7D1C569E740056A392 /* ConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCB5B7C1C569E740056A392 /* ConnectionViewController.m */; };
+		9FCB5B821C569E740056A392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FCB5B811C569E740056A392 /* Assets.xcassets */; };
+		9FCB5B901C569E750056A392 /* JPBluetoothKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCB5B8F1C569E750056A392 /* JPBluetoothKitTests.m */; };
+		9FCB5BC21C5799FD0056A392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCB5BC11C5799FD0056A392 /* Main.storyboard */; };
+		9FD22DC41C64C2790079C973 /* AdvertisementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD22DC31C64C2790079C973 /* AdvertisementViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FCB5B8C1C569E750056A392 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FCB5B6A1C569E740056A392 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FCB5B711C569E740056A392;
+			remoteInfo = JPBluetoothKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9F60FB9A1C8D956C00311E3A /* PPAdvertisement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAdvertisement.h; sourceTree = "<group>"; };
+		9F60FB9B1C8D956C00311E3A /* PPAdvertisement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAdvertisement.m; sourceTree = "<group>"; };
+		9F60FB9C1C8D956C00311E3A /* PPAdvertisementCoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAdvertisementCoreManager.h; sourceTree = "<group>"; };
+		9F60FB9D1C8D956C00311E3A /* PPAdvertisementCoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAdvertisementCoreManager.m; sourceTree = "<group>"; };
+		9F60FBA01C8D956C00311E3A /* PPCharacteristic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCharacteristic.h; sourceTree = "<group>"; };
+		9F60FBA11C8D956C00311E3A /* PPCharacteristic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCharacteristic.m; sourceTree = "<group>"; };
+		9F60FBA21C8D956C00311E3A /* PPConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPConfiguration.h; sourceTree = "<group>"; };
+		9F60FBA31C8D956C00311E3A /* PPConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPConfiguration.m; sourceTree = "<group>"; };
+		9F60FBA41C8D956C00311E3A /* PPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPService.h; sourceTree = "<group>"; };
+		9F60FBA51C8D956C00311E3A /* PPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPService.m; sourceTree = "<group>"; };
+		9F60FBA81C8D956C00311E3A /* PPCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCommand.h; sourceTree = "<group>"; };
+		9F60FBA91C8D956C00311E3A /* PPCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCommand.m; sourceTree = "<group>"; };
+		9F60FBAA1C8D956C00311E3A /* PPCommandBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCommandBuilder.h; sourceTree = "<group>"; };
+		9F60FBAB1C8D956C00311E3A /* PPCommandBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCommandBuilder.m; sourceTree = "<group>"; };
+		9F60FBAC1C8D956C00311E3A /* PPMultipartCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMultipartCommand.h; sourceTree = "<group>"; };
+		9F60FBAD1C8D956C00311E3A /* PPMultipartCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMultipartCommand.m; sourceTree = "<group>"; };
+		9F60FBAE1C8D956C00311E3A /* PPPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPeripheral.h; sourceTree = "<group>"; };
+		9F60FBAF1C8D956C00311E3A /* PPPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPeripheral.m; sourceTree = "<group>"; };
+		9F60FBB01C8D956C00311E3A /* PPCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCentralManager.h; sourceTree = "<group>"; };
+		9F60FBB11C8D956C00311E3A /* PPCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCentralManager.m; sourceTree = "<group>"; };
+		9F60FBB21C8D956C00311E3A /* PPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPConnection.h; sourceTree = "<group>"; };
+		9F60FBB31C8D956C00311E3A /* PPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPConnection.m; sourceTree = "<group>"; };
+		9F60FBB41C8D956C00311E3A /* PPConnectionCoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPConnectionCoreManager.h; sourceTree = "<group>"; };
+		9F60FBB51C8D956C00311E3A /* PPConnectionCoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPConnectionCoreManager.m; sourceTree = "<group>"; };
+		9F60FBB71C8D956C00311E3A /* PPErrorBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPErrorBuilder.h; sourceTree = "<group>"; };
+		9F60FBB81C8D956C00311E3A /* PPErrorBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPErrorBuilder.m; sourceTree = "<group>"; };
+		9F60FBB91C8D956C00311E3A /* PPUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPUtility.h; sourceTree = "<group>"; };
+		9F60FBBA1C8D956C00311E3A /* PPUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPUtility.m; sourceTree = "<group>"; };
+		9FCB5B721C569E740056A392 /* JPBluetoothKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPBluetoothKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FCB5B761C569E740056A392 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9FCB5B781C569E740056A392 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9FCB5B791C569E740056A392 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9FCB5B7B1C569E740056A392 /* ConnectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectionViewController.h; sourceTree = "<group>"; };
+		9FCB5B7C1C569E740056A392 /* ConnectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConnectionViewController.m; sourceTree = "<group>"; };
+		9FCB5B811C569E740056A392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FCB5B861C569E740056A392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FCB5B8B1C569E750056A392 /* JPBluetoothKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPBluetoothKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FCB5B8F1C569E750056A392 /* JPBluetoothKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPBluetoothKitTests.m; sourceTree = "<group>"; };
+		9FCB5B911C569E750056A392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FCB5BC11C5799FD0056A392 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9FD22DC21C64C2790079C973 /* AdvertisementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertisementViewController.h; sourceTree = "<group>"; };
+		9FD22DC31C64C2790079C973 /* AdvertisementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertisementViewController.m; sourceTree = "<group>"; };
+		9FD22DC51C64C2BE0079C973 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FCB5B6F1C569E740056A392 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FCB5B881C569E750056A392 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F60FB981C8D956C00311E3A /* BluetoothKit */ = {
+			isa = PBXGroup;
+			children = (
+				9F60FB991C8D956C00311E3A /* Advertisement */,
+				9F60FB9E1C8D956C00311E3A /* Connection */,
+				9F60FBB61C8D956C00311E3A /* Utilities */,
+			);
+			path = BluetoothKit;
+			sourceTree = "<group>";
+		};
+		9F60FB991C8D956C00311E3A /* Advertisement */ = {
+			isa = PBXGroup;
+			children = (
+				9F60FB9A1C8D956C00311E3A /* PPAdvertisement.h */,
+				9F60FB9B1C8D956C00311E3A /* PPAdvertisement.m */,
+				9F60FB9C1C8D956C00311E3A /* PPAdvertisementCoreManager.h */,
+				9F60FB9D1C8D956C00311E3A /* PPAdvertisementCoreManager.m */,
+			);
+			path = Advertisement;
+			sourceTree = "<group>";
+		};
+		9F60FB9E1C8D956C00311E3A /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				9F60FB9F1C8D956C00311E3A /* Characteristics_Services */,
+				9F60FBA61C8D956C00311E3A /* Peripheral */,
+				9F60FBB01C8D956C00311E3A /* PPCentralManager.h */,
+				9F60FBB11C8D956C00311E3A /* PPCentralManager.m */,
+				9F60FBB21C8D956C00311E3A /* PPConnection.h */,
+				9F60FBB31C8D956C00311E3A /* PPConnection.m */,
+				9F60FBB41C8D956C00311E3A /* PPConnectionCoreManager.h */,
+				9F60FBB51C8D956C00311E3A /* PPConnectionCoreManager.m */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		9F60FB9F1C8D956C00311E3A /* Characteristics_Services */ = {
+			isa = PBXGroup;
+			children = (
+				9F60FBA01C8D956C00311E3A /* PPCharacteristic.h */,
+				9F60FBA11C8D956C00311E3A /* PPCharacteristic.m */,
+				9F60FBA21C8D956C00311E3A /* PPConfiguration.h */,
+				9F60FBA31C8D956C00311E3A /* PPConfiguration.m */,
+				9F60FBA41C8D956C00311E3A /* PPService.h */,
+				9F60FBA51C8D956C00311E3A /* PPService.m */,
+			);
+			path = Characteristics_Services;
+			sourceTree = "<group>";
+		};
+		9F60FBA61C8D956C00311E3A /* Peripheral */ = {
+			isa = PBXGroup;
+			children = (
+				9F60FBA71C8D956C00311E3A /* PeripheralManagement */,
+				9F60FBAE1C8D956C00311E3A /* PPPeripheral.h */,
+				9F60FBAF1C8D956C00311E3A /* PPPeripheral.m */,
+			);
+			path = Peripheral;
+			sourceTree = "<group>";
+		};
+		9F60FBA71C8D956C00311E3A /* PeripheralManagement */ = {
+			isa = PBXGroup;
+			children = (
+				9F60FBA81C8D956C00311E3A /* PPCommand.h */,
+				9F60FBA91C8D956C00311E3A /* PPCommand.m */,
+				9F60FBAA1C8D956C00311E3A /* PPCommandBuilder.h */,
+				9F60FBAB1C8D956C00311E3A /* PPCommandBuilder.m */,
+				9F60FBAC1C8D956C00311E3A /* PPMultipartCommand.h */,
+				9F60FBAD1C8D956C00311E3A /* PPMultipartCommand.m */,
+			);
+			path = PeripheralManagement;
+			sourceTree = "<group>";
+		};
+		9F60FBB61C8D956C00311E3A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9F60FBB71C8D956C00311E3A /* PPErrorBuilder.h */,
+				9F60FBB81C8D956C00311E3A /* PPErrorBuilder.m */,
+				9F60FBB91C8D956C00311E3A /* PPUtility.h */,
+				9F60FBBA1C8D956C00311E3A /* PPUtility.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9FCB5B691C569E740056A392 = {
+			isa = PBXGroup;
+			children = (
+				9FCB5B741C569E740056A392 /* JPBluetoothKit */,
+				9FCB5B8E1C569E750056A392 /* JPBluetoothKitTests */,
+				9FCB5B731C569E740056A392 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FCB5B731C569E740056A392 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FCB5B721C569E740056A392 /* JPBluetoothKit.app */,
+				9FCB5B8B1C569E750056A392 /* JPBluetoothKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FCB5B741C569E740056A392 /* JPBluetoothKit */ = {
+			isa = PBXGroup;
+			children = (
+				9FCB5B781C569E740056A392 /* AppDelegate.h */,
+				9FCB5B791C569E740056A392 /* AppDelegate.m */,
+				9FCB5B7B1C569E740056A392 /* ConnectionViewController.h */,
+				9FCB5B7C1C569E740056A392 /* ConnectionViewController.m */,
+				9FD22DC21C64C2790079C973 /* AdvertisementViewController.h */,
+				9FD22DC31C64C2790079C973 /* AdvertisementViewController.m */,
+				9FD22DC51C64C2BE0079C973 /* Constants.h */,
+				9F60FB981C8D956C00311E3A /* BluetoothKit */,
+				9FCB5BC11C5799FD0056A392 /* Main.storyboard */,
+				9FCB5B811C569E740056A392 /* Assets.xcassets */,
+				9FCB5B861C569E740056A392 /* Info.plist */,
+				9FCB5B751C569E740056A392 /* Supporting Files */,
+			);
+			path = JPBluetoothKit;
+			sourceTree = "<group>";
+		};
+		9FCB5B751C569E740056A392 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FCB5B761C569E740056A392 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9FCB5B8E1C569E750056A392 /* JPBluetoothKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FCB5B8F1C569E750056A392 /* JPBluetoothKitTests.m */,
+				9FCB5B911C569E750056A392 /* Info.plist */,
+			);
+			path = JPBluetoothKitTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FCB5B711C569E740056A392 /* JPBluetoothKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FCB5B941C569E750056A392 /* Build configuration list for PBXNativeTarget "JPBluetoothKit" */;
+			buildPhases = (
+				9FCB5B6E1C569E740056A392 /* Sources */,
+				9FCB5B6F1C569E740056A392 /* Frameworks */,
+				9FCB5B701C569E740056A392 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JPBluetoothKit;
+			productName = JPBluetoothKit;
+			productReference = 9FCB5B721C569E740056A392 /* JPBluetoothKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FCB5B8A1C569E750056A392 /* JPBluetoothKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FCB5B971C569E750056A392 /* Build configuration list for PBXNativeTarget "JPBluetoothKitTests" */;
+			buildPhases = (
+				9FCB5B871C569E750056A392 /* Sources */,
+				9FCB5B881C569E750056A392 /* Frameworks */,
+				9FCB5B891C569E750056A392 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FCB5B8D1C569E750056A392 /* PBXTargetDependency */,
+			);
+			name = JPBluetoothKitTests;
+			productName = JPBluetoothKitTests;
+			productReference = 9FCB5B8B1C569E750056A392 /* JPBluetoothKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FCB5B6A1C569E740056A392 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Jan Posz";
+				TargetAttributes = {
+					9FCB5B711C569E740056A392 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WB824S35DS;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					9FCB5B8A1C569E750056A392 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 9FCB5B711C569E740056A392;
+					};
+				};
+			};
+			buildConfigurationList = 9FCB5B6D1C569E740056A392 /* Build configuration list for PBXProject "JPBluetoothKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FCB5B691C569E740056A392;
+			productRefGroup = 9FCB5B731C569E740056A392 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FCB5B711C569E740056A392 /* JPBluetoothKit */,
+				9FCB5B8A1C569E750056A392 /* JPBluetoothKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FCB5B701C569E740056A392 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCB5B821C569E740056A392 /* Assets.xcassets in Resources */,
+				9FCB5BC21C5799FD0056A392 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FCB5B891C569E750056A392 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FCB5B6E1C569E740056A392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F60FBC21C8D956C00311E3A /* PPMultipartCommand.m in Sources */,
+				9F60FBBD1C8D956C00311E3A /* PPCharacteristic.m in Sources */,
+				9F60FBBC1C8D956C00311E3A /* PPAdvertisementCoreManager.m in Sources */,
+				9F60FBC41C8D956C00311E3A /* PPCentralManager.m in Sources */,
+				9FD22DC41C64C2790079C973 /* AdvertisementViewController.m in Sources */,
+				9FCB5B7D1C569E740056A392 /* ConnectionViewController.m in Sources */,
+				9F60FBBE1C8D956C00311E3A /* PPConfiguration.m in Sources */,
+				9F60FBBB1C8D956C00311E3A /* PPAdvertisement.m in Sources */,
+				9F60FBC61C8D956C00311E3A /* PPConnectionCoreManager.m in Sources */,
+				9FCB5B7A1C569E740056A392 /* AppDelegate.m in Sources */,
+				9F60FBBF1C8D956C00311E3A /* PPService.m in Sources */,
+				9F60FBC11C8D956C00311E3A /* PPCommandBuilder.m in Sources */,
+				9F60FBC81C8D956C00311E3A /* PPUtility.m in Sources */,
+				9F60FBC71C8D956C00311E3A /* PPErrorBuilder.m in Sources */,
+				9F60FBC51C8D956C00311E3A /* PPConnection.m in Sources */,
+				9FCB5B771C569E740056A392 /* main.m in Sources */,
+				9F60FBC01C8D956C00311E3A /* PPCommand.m in Sources */,
+				9F60FBC31C8D956C00311E3A /* PPPeripheral.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FCB5B871C569E750056A392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCB5B901C569E750056A392 /* JPBluetoothKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FCB5B8D1C569E750056A392 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FCB5B711C569E740056A392 /* JPBluetoothKit */;
+			targetProxy = 9FCB5B8C1C569E750056A392 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9FCB5B921C569E750056A392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9FCB5B931C569E750056A392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FCB5B951C569E750056A392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = JPBluetoothKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.janposz.JPBluetoothKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		9FCB5B961C569E750056A392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = JPBluetoothKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.janposz.JPBluetoothKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		9FCB5B981C569E750056A392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JPBluetoothKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.janposz..JPBluetoothKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JPBluetoothKit.app/JPBluetoothKit";
+			};
+			name = Debug;
+		};
+		9FCB5B991C569E750056A392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JPBluetoothKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.janposz..JPBluetoothKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JPBluetoothKit.app/JPBluetoothKit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FCB5B6D1C569E740056A392 /* Build configuration list for PBXProject "JPBluetoothKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FCB5B921C569E750056A392 /* Debug */,
+				9FCB5B931C569E750056A392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FCB5B941C569E750056A392 /* Build configuration list for PBXNativeTarget "JPBluetoothKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FCB5B951C569E750056A392 /* Debug */,
+				9FCB5B961C569E750056A392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FCB5B971C569E750056A392 /* Build configuration list for PBXNativeTarget "JPBluetoothKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FCB5B981C569E750056A392 /* Debug */,
+				9FCB5B991C569E750056A392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FCB5B6A1C569E740056A392 /* Project object */;
+}
